@@ -1,7 +1,7 @@
 var myList = (JSON.parse(localStorage.getItem("myData")) || [])
 
 function createItem() {
-	var newItem = {text:prompt("Your new item prompt goes here"), style:"none"}
+	var newItem = {text:window.prompt("Your new item prompt goes here"), style:"none"}
 	myList.push(newItem)
 	localStorage.setItem("myData", JSON.stringify(myList))
 	printItem(newItem)
