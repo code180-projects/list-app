@@ -18,4 +18,4 @@ function printItem(item) {
 	document.getElementById("myDiv").appendChild(p)
 }
 
-for (i=0; i < myList.length; i++) {printItem(myList[i])}
+for (x=0; x < myList.length; x++) {printItem(myList[x])}
