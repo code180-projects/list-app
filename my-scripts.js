@@ -1,5 +1,7 @@
+// store data
 var myList = (JSON.parse(localStorage.getItem("myData")) || [])
 
+// create items
 function createItem() {
 	var newItem = {text:window.prompt("Your new item prompt goes here"), style:"none"}
 	myList.push(newItem)
@@ -7,6 +9,7 @@ function createItem() {
 	printItem(newItem)
 }
 
+// print items
 function printItem(item) {
 	p = document.createElement("p")
 	p.innerHTML = item.text
@@ -18,4 +21,5 @@ function printItem(item) {
 	document.getElementById("myDiv").appendChild(p)
 }
 
+// loop and print list
 for (x=0; x < myList.length; x++) {printItem(myList[x])}
