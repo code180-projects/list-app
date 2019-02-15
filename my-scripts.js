@@ -11,7 +11,7 @@ function createItem() {
 
 // print items
 function printItem(item) {
-	p = document.createElement("p")
+	var p = document.createElement("p")
 	p.innerHTML = item.text
 	p.className = item.style
 	p.onclick = function () {
